@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>M&M 3e Villain Generator</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body class="dark-theme">
+<nav>
+  <ul>
+    <!---Index-->
+    <li><a href="index.html">Home</a></li>
+    <li><a href="alignmentGenerator.html">Alignment Generator</a></li>
+    <li><a href="characterGenerator.html">Character Generator</a></li>
+    <li><strong>M&M 3e Villain Generator</strong></li>
+    <li><a href="studentGenerator.html">Student Generator</a></li>
+    <li><a href="villainNameGenerator.html">Villain Name Generator</a></li>
+  </ul>
+</nav>
+  <div class="center">
+    <h1>Villain Generator</h1>
+  </div>
+  <div>
+    <p>For power level, please enter either a single number or a range between two numbers, such as 8-10</p>
+    <p>It can be helpful to remember that the Gamemaster's Guide says to Choose a power level for your villain based on the character’s  role:  within  1  level  of  the  series  PL  for  a  lieutenant, 1–5 levels higher for a master villain, and 3–5 levels lower for a henchman. So for a PL10 series, aim for PL11-15  for  a  master  villain,  PL9-11  for  a  lieutenant,  and  PL 5–7 for a henchman.</p>
+  </div>
+  <div class="center">
+    Power Level of Villain to Generate: <input type="text" id="number" name="number" value="8">
+  </div>
+  <div class="center">
+    <button class="btn" id="btnGenerate">Generate Villain</button>
+  </div>
+  <div>
+    <p></p>
+  </div>
+  <script src="villainGenerator.js"></script>
+</body>
+</html>

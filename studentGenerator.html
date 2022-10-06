@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Character Generator</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body class="dark-theme">
+<nav>
+  <ul>
+    <!---Index-->
+    <li><a href="index.html">Home</a></li>
+    <li><a href="alignmentGenerator.html">Alignment Generator</a></li>
+    <li><a href="characterGenerator.html">Character Generator</a></li>
+    <li><a href="villainGenerator.html">M&M 3e Villain Generator</a></li>
+    <li><strong>Student Generator</strong></li>
+    <li><a href="villainNameGenerator.html">Villain Name Generator</a></li>
+  </ul>
+</nav>
+<section hidden>
+    <div>
+        <button class="theme">Light Mode</button>
+    </div>
+    <div>
+        <input type="checkbox" id="specialGeneration" name="specialGeneration">
+        <label for="special"> Special Generation</label><br>
+    </div>
+    
+    <p id="msg">Character Traits</p>
+    <div class="center">
+        Number of Characters to Generate: <input type="text" id="number" name="number" value="1">
+    </div>
+    <div class="center">
+        <button class="btn" id="btnGenerate">Generate Group</button>
+    </div>
+</section>
+
+<div>
+    <button id="debug" name="debug"
+     checked>
+    <label for="debug" id="debugLabel">Show Debug Data</label>
+</div>
+<p>Percentage of Characters who would identify as LGBTQIA+ <input type="text" id="lgbtqiaPercent" value="10"></p>
+<div class="center">
+    <h1 id="header">Student Generator</h1>
+</div>
+<div class="center">
+    <button class="btn" id="btnStudentGenerate">Generate Student</button>
+</div>
+    <script src="characterGenerator.js"></script>
+    <script src="studentGenerator.js"></script>
+</body>
+</html>

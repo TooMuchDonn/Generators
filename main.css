@@ -1,0 +1,96 @@
+:root {
+    --green: #00FF00;
+    --white: #ffffff;
+    --black: #000000;
+    --light: #2d88ff;
+}
+
+
+* {
+    color: var(--fontColor);
+    font-family: helvetica;
+  }
+  body {
+      background: var(--bg);
+  }
+
+ul{
+    font-family: helvetica;
+}
+
+li {
+    list-style: circle;
+}
+
+#msg {
+  font-family: monospace;
+}
+
+.light-theme {
+    --bg: var(--white);
+    --fontColor: var(--black);
+    --btnBg: var(--black);
+    --btnFontColor: var(--white);
+}
+  
+.dark-theme {
+    --bg: var(--black);
+    --fontColor: var(--light);
+    --btnBg: var(--white);
+    --btnFontColor: var(--black);
+}
+
+.btn {
+    height: 40px;
+    width: 100px;
+    border: none;
+    color: var(--btnFontColor);
+    background-color: var(--btnBg);
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    padding-top: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+}
+
+.centerNoPadding {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.centerBold {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    padding-top: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    font-weight: bold;
+}
+
+.row {
+    display: flex;
+}
+
+.column {
+    flex: 50%;
+}
+
+.fourColumn {
+    flex: 25%;
+}
+
+.threeColumn {
+    flex: 33%;
+}
+
+.btn:focus { outline-style: none; }
